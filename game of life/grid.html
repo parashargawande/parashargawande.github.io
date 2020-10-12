@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <link rel="stylesheet" href="./grid.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="./blocks.png" width="35px" height="35px">
+        <a class="navbar-brand" href="#">Game Of Life</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Play Area <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">How to Play</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Developer</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div style="background-color: black;">
+        <div style="text-align: center">
+            <canvas class="canvas"  width="600px" height="600px" id="canvas"></canvas><br />
+            <div class="controls">
+                
+                    <label class="lblgridsize">Enter your grid size</label><div class="inp1">
+                    <input class="form-control" id="changeGrid" type="number" value=""></input></div></div>
+                <button type="button" class="btn btn-secondary btn-md " onclick="startInterval()">start</button>
+                <button type="button" class="btn btn-secondary btn-md " onclick="clearIntervalFun()">stop</button>
+                <button type="button" class="btn btn-secondary btn-md " onclick="draw()">clear</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright text-center py-3">© 2020 Copyright: Parashar Gawande
+    </div>
+
+
+</body>
+
+<script src="./gol.js"></script>
+<script src="./jquery-3.4.1.slim.min.js"></script>
+<script src="./popper.min.js"></script>
+<script src="./bootstrap.min.js"></script>
