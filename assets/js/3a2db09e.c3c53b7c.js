@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[121],{8070:e=>{e.exports=JSON.parse('{"tags":[{"label":"react-native","permalink":"/blog/tags/react-native","count":1},{"label":"Mobile-development","permalink":"/blog/tags/mobile-development","count":1},{"label":"Javascript","permalink":"/blog/tags/javascript","count":1}]}')}}]);

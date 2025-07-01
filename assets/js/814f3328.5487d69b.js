@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Getting Started with React Native Development","permalink":"/blog/getting-started-with-react-native","unlisted":false,"date":"2024-01-15T00:00:00.000Z"}]}')}}]);
