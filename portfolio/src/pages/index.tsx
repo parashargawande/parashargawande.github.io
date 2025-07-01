@@ -34,18 +34,6 @@ function HomepageHeader() {
               </Link>
             </div>
           </div>
-          <div className="col col--4">
-            <div className={styles.profileImage}>
-              <img 
-                src="/img/profile-placeholder.jpg" 
-                alt="Parashar Gawande" 
-                className={styles.profileImg}
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none';
-                }}
-              />
-            </div>
-          </div>
         </div>
       </div>
     </header>
