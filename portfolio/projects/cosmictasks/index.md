@@ -8,8 +8,11 @@ tags: [Astrology, Productivity, Web, Vedic, Planner, Cosmic, Task Management]
 
 CosmicTasks helps you plan your day in alignment with the stars. By leveraging your birth chart and astrological transitions, the app recommends the ideal time for different activities — maximizing productivity, minimizing friction, and aligning your daily tasks with cosmic rhythms.
 
+---
+
 🔗 **Live Website:**  
 👉 **https://parashargawande.github.io/cosmoTask/**
+
 ---
 
 ## 🚀 Features
