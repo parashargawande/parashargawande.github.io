@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Parashar Gawande',
-  tagline: 'Software Engineer | Tech Enthusiast',
+  tagline: 'Where Software Meets Hardware & Creativity',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future

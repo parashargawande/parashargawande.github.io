@@ -7,8 +7,6 @@ description: Learn more about Parashar Gawande
 
 # About Me
 
-## Hello! I'm Parashar Gawande 👋
-
 I'm a passionate software developer with expertise in full-stack development, cloud technologies, and building scalable applications. I have a strong background in designing and developing embedded systems and IoT solutions, integrating hardware and software to create innovative, real-world applications.
 
 ## Technical Expertise
@@ -54,9 +52,17 @@ With several years of experience in software development, I specialize in:
 
 Interested in collaborating on a project or have questions about my work? Feel free to reach out!
 
-- **Email:** [parashar.gawande@example.com](mailto:parashar.gawande@example.com)
-- **LinkedIn:** [parashargawande](https://linkedin.com/in/parashargawande)
-- **GitHub:** [parashargawande](https://github.com/parashargawande) 
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:parashargawande@gmail.com)  
+👉 https://mailto:parashargawande@gmail.com  
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/parashargawande)  
+👉 https://linkedin.com/in/parashargawande  
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/parashargawande)  
+👉 https://github.com/parashargawande  
+
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/parashargawande)  
+👉 https://www.instagram.com/parashargawande
 
 ---
 
