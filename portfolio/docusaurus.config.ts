@@ -180,6 +180,13 @@ const config: Config = {
     {
       tagName: 'meta',
       attributes: {
+        name: 'google-site-verification',
+        content: 'boXMUMiCh1wrtfgbLMejcxosy_XCnKeoP7zf-zG8irQ',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
         name: 'twitter:card',
         content: 'summary_large_image',
       },
