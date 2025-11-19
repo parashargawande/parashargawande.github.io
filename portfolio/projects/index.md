@@ -17,6 +17,8 @@ An energy-efficient street lighting solution using LDR and PIR sensors to automa
 
 [Read More](/projects/embedded-smart-street-light-system)
 
+---
+
 ### CosmicTasks – Astrology-Based Task Scheduler  
 A personalized task recommendation system that uses your birth chart and current planetary movements to suggest daily tasks, helping you align your to-dos with cosmic energy and maximize productivity.  
 
