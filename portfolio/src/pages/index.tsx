@@ -4,7 +4,8 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
-import Typewriter from "typewriter-effect";
+import Typewriter from 'typewriter-effect';
+import Head from '@docusaurus/Head';
 
 import styles from './index.module.css';
 
@@ -146,10 +147,28 @@ function CTASection() {
 
 export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
+  const absoluteOgImage = `${siteConfig.url}${siteConfig.baseUrl}img/docusaurus-social-card.jpg`;
+  const pageTitle = 'Parashar Gawande | Software Engineer & Tech Creator';
+  const pageDescription =
+    'Showcase of Parashar Gawande’s software engineering, IoT, and cloud projects with links to demos, articles, and videos.';
+  const pageKeywords =
+    'Parashar Gawande, portfolio, software engineer, cloud developer, IoT, RC projects, full-stack developer';
+
   return (
     <Layout
       title={`Welcome | नमस्ते `}
       description="Personal website of Parashar Gawande - Software Engineer | Tech Enthusiast">
+      <Head>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:image" content={absoluteOgImage} />
+        <meta property="og:url" content={siteConfig.url} />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content={absoluteOgImage} />
+        <meta name="keywords" content={pageKeywords} />
+      </Head>
       <HomepageHeader />
       <main>
         <CTASection />

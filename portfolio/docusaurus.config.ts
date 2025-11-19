@@ -2,6 +2,44 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+const siteUrl = 'https://parashargawande.github.io';
+
+const defaultKeywords = [
+  'Parashar Gawande',
+  'software engineer',
+  'full stack developer',
+  'IoT developer',
+  'electronics projects',
+  'cloud solutions',
+  'portfolio',
+];
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Parashar Gawande',
+  url: siteUrl,
+  jobTitle: 'Software Engineer & Tech Creator',
+  description:
+    'Portfolio of Parashar Gawande — software engineer crafting full-stack apps, IoT systems, and immersive technical content.',
+  image: `${siteUrl}/img/android-chrome-512x512.png`,
+  sameAs: [
+    'https://github.com/parashargawande',
+    'https://linkedin.com/in/parashargawande',
+    'https://medium.com/@parashargawande',
+    'https://www.youtube.com/@parashargawande',
+    'https://www.instagram.com/parashargawande',
+  ],
+  alumniOf: 'Savitribai Phule Pune University',
+  knowsAbout: [
+    'Full Stack Development',
+    'Cloud Architecture',
+    'IoT',
+    'Embedded Systems',
+    'DevOps',
+  ],
+};
+
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
@@ -15,7 +53,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://parashargawande.github.io',
+  url: siteUrl,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -44,10 +82,14 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/parashargawande/parashargawande.github.io/tree/main/',
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.7,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -101,11 +143,55 @@ const config: Config = {
         },
       ],
     },
+    metadata: [
+      {name: 'description', content: 'Portfolio of Parashar Gawande — software engineer building full-stack web apps, IoT systems, and cloud-native products.'},
+      {name: 'keywords', content: defaultKeywords.join(', ')},
+      {name: 'author', content: 'Parashar Gawande'},
+      {name: 'robots', content: 'index, follow'},
+      {name: 'theme-color', content: '#0b1120'},
+    ],
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'canonical',
+        href: `${siteUrl}/`,
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        property: 'og:site_name',
+        content: 'Parashar Gawande Portfolio',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        property: 'og:image:alt',
+        content: 'Portrait and branding of Parashar Gawande',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+    },
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'application/ld+json',
+      },
+      innerHTML: JSON.stringify(structuredData),
+    },
+  ],
 };
 
 export default config;
