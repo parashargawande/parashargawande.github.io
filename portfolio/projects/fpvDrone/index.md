@@ -1,6 +1,6 @@
 ---
-	title: FPV Drone Creation
-	description: Detailed description of the 5 inch FPV drone project.
+title: FPV Drone Creation
+description: "Detailed description of the 5 inch FPV drone project."
 ---
 
 ### 5 Inch FPV Drone
