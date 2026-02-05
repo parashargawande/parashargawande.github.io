@@ -181,7 +181,7 @@ const config: Config = {
       tagName: 'meta',
       attributes: {
         name: 'google-site-verification',
-        content: 'boXMUMiCh1wrtfgbLMejcxosy_XCnKeoP7zf-zG8irQ',
+        content: '8rpgr1D0J6gBEmvVGyaFus-V6sLtc2GtIP1xLt0sveI',
       },
     },
     {
