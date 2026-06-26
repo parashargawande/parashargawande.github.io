@@ -156,7 +156,7 @@ export default function Home(): ReactNode {
 
   return (
     <Layout
-      title={`Welcome | नमस्ते `}
+      title="Software Engineer & Tech Creator"
       description="Personal website of Parashar Gawande - Software Engineer | Tech Enthusiast">
       <Head>
         <meta property="og:type" content="website" />

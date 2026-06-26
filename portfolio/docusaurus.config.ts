@@ -157,13 +157,6 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
   headTags: [
     {
-      tagName: 'link',
-      attributes: {
-        rel: 'canonical',
-        href: `${siteUrl}/`,
-      },
-    },
-    {
       tagName: 'meta',
       attributes: {
         property: 'og:site_name',
