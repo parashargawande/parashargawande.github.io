@@ -14,31 +14,53 @@ const defaultKeywords = [
   'portfolio',
 ];
 
-const structuredData = {
-  '@context': 'https://schema.org',
-  '@type': 'Person',
-  name: 'Parashar Gawande',
-  url: siteUrl,
-  jobTitle: 'Software Engineer & Tech Creator',
-  description:
-    'Portfolio of Parashar Gawande — software engineer crafting full-stack apps, IoT systems, and immersive technical content.',
-  image: `${siteUrl}/img/android-chrome-512x512.png`,
-  sameAs: [
-    'https://github.com/parashargawande',
-    'https://linkedin.com/in/parashargawande',
-    'https://medium.com/@parashargawande',
-    'https://www.youtube.com/@parashargawande',
-    'https://www.instagram.com/parashargawande',
-  ],
-  alumniOf: 'Savitribai Phule Pune University',
-  knowsAbout: [
-    'Full Stack Development',
-    'Cloud Architecture',
-    'IoT',
-    'Embedded Systems',
-    'DevOps',
-  ],
-};
+const structuredData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Parashar Gawande',
+    url: siteUrl,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${siteUrl}/img/android-chrome-512x512.png`,
+      width: 512,
+      height: 512,
+    },
+    image: `${siteUrl}/img/android-chrome-512x512.png`,
+    sameAs: [
+      'https://github.com/parashargawande',
+      'https://linkedin.com/in/parashargawande',
+      'https://medium.com/@parashargawande',
+      'https://www.youtube.com/@parashargawande',
+      'https://www.instagram.com/parashargawande',
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Parashar Gawande',
+    url: siteUrl,
+    jobTitle: 'Software Engineer & Tech Creator',
+    description:
+      'Portfolio of Parashar Gawande — software engineer crafting full-stack apps, IoT systems, and immersive technical content.',
+    image: `${siteUrl}/img/android-chrome-512x512.png`,
+    sameAs: [
+      'https://github.com/parashargawande',
+      'https://linkedin.com/in/parashargawande',
+      'https://medium.com/@parashargawande',
+      'https://www.youtube.com/@parashargawande',
+      'https://www.instagram.com/parashargawande',
+    ],
+    alumniOf: 'Savitribai Phule Pune University',
+    knowsAbout: [
+      'Full Stack Development',
+      'Cloud Architecture',
+      'IoT',
+      'Embedded Systems',
+      'DevOps',
+    ],
+  },
+];
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -110,8 +132,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/android-chrome-512x512.png',
     navbar: {
       title: '',
       logo: {
@@ -182,6 +203,40 @@ const config: Config = {
       attributes: {
         name: 'twitter:card',
         content: 'summary_large_image',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/img/favicon-32x32.png',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: '/img/favicon-16x16.png',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: '/img/apple-touch-icon.png',
       },
     },
     {
